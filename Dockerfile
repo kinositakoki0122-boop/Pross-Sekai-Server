@@ -39,7 +39,7 @@ COPY client/src/ ./client/src/
 COPY source/ ./source/
 COPY .env ./
 
-COPY pack/ ./pack/
+#COPY pack/ ./pack/
 COPY client/index.html ./client/
 COPY client/tsconfig.json ./client/
 COPY client/vite.config.ts ./client/
