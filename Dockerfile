@@ -37,7 +37,7 @@ COPY src/ ./src/
 COPY lib/ ./lib/
 COPY client/src/ ./client/src/
 COPY source/ ./source/
-COPY .env ./
+#COPY .env ./
 
 #COPY pack/ ./pack/
 COPY client/index.html ./client/
@@ -66,7 +66,7 @@ COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/lib ./lib
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/pack ./pack
-COPY --from=builder /app/.env ./
+#COPY --from=builder /app/.env ./
 
 ENV NODE_ENV=production
 ENV PORT=4000
